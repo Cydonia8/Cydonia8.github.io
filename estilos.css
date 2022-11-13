@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: '7 days';
+    src: url('./7days/7DAYSFAT.TTF');
+}
+body{
+    margin: 0;
+    
+}
+header{
+    background-color: #2c292933;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1.5px solid #7fffd4;
+    font-family: '7 days';
+    font-size: 0.8em;
+    font-weight: bold;
+    animation-name: blurReduciendo;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+
+}
+header img{
+    width: 10%;
+    margin: 0 2rem 0 2rem;
+    animation-name: opImHeader;
+    animation-duration: 4.8s;
+    animation-delay: 0.5s;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+   display: flex; 
+   margin: 0;
+   list-style: none;    
+}
+nav ul:nth-of-type(2){
+    padding: 0 40px 0 0;
+}
+nav li:first-child{
+    margin-right: 8rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;    
+}
+#cabecera img{
+    width: 100%;
+
+}
+
+
+
+.animation-intro{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    align-items: center;
+    z-index: 1;
+    animation-name: entradaLogo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    color: white;
+}
+.animation-intro img{
+    animation-name: tamañoImg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+@keyframes opImHeader {
+    0%{
+        opacity: 0;
+    }80%{
+        opacity: 0.08;
+    }100%{
+        opacity: 1;
+    }
+}
+@keyframes tamañoImg {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 10%;
+        margin: 4rem 3rem 0 4.5rem;
+    }
+
+    
+}
+@keyframes opImagen {
+    0%{
+        opacity: 0;
+    }50%{
+        opacity: 0.5;
+    }100%{
+        opacity: 1;
+    }
+}
+@keyframes entradaLogo {
+    0%{
+        opacity: 1;
+        filter: blur(0px);
+        background-color: #000000;
+    }
+    50%{
+        opacity: 1;
+        /* filter: blur(1px); */
+        background-color: #00000099;
+   
+    }
+    100%{
+        opacity: 0;
+        /* width: 0vw; */
+        /* filter: blur(2px); */
+        background-color: #00000000;
+        height: 0vh;
+    }
+}
+@keyframes blurReduciendo {
+    0%{
+        filter: blur(6.5px);
+    }50%{
+        filter: blur(4px);
+    }75%{
+        filter: blur(2px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+.animation-intro img{
+    width: 100%;
+}

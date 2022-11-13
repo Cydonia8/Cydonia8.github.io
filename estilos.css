@@ -20,7 +20,7 @@ header{
     left: 0px;
     border-bottom: 1.5px solid #7fffd4;
     font-family: '7 days';
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: bold;
     animation-name: blurReduciendo;
     animation-duration: 5s;
@@ -42,6 +42,7 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 nav ul{
    display: flex; 
@@ -52,7 +53,7 @@ nav ul:nth-of-type(2){
     padding: 0 40px 0 0;
 }
 nav li:first-child{
-    margin-right: 8rem;
+    margin-right: 5rem;
 }
 nav a{
     text-decoration: none;

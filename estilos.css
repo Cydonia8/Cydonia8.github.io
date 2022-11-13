@@ -1,3 +1,7 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    outline: 0;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -6,8 +10,7 @@ html{
     src: url('./7days/7DAYSFAT.TTF');
 }
 body{
-    margin: 0;
-    
+    margin: 0;    
 }
 header{
     background-color: #2c292933;
@@ -26,6 +29,7 @@ header{
     animation-name: opImHeader;
     animation-duration: 4.8s;
     animation-delay: 0.5s;
+    backdrop-filter: blur(2px);
 
 }
 header img{
@@ -77,13 +81,28 @@ nav a{
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
-    color: black;
+    color: white;
 }
+h1{
+    margin: 0;
+    animation-name: separacionTitulo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-timing-function:linear;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: '7 days';
+    font-size: 1.2em;
+    text-align: center;
+}
+
 .animation-intro img{
     animation-name: tamañoImg;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
+   
 }
 @keyframes opImHeader {
     0%{
@@ -96,7 +115,7 @@ nav a{
 }
 @keyframes tamañoImg {
     0%{
-        width: 100%;
+        width: 60%;
     }
     100%{
         width: 10%;
@@ -146,6 +165,14 @@ nav a{
         filter: blur(0px);
     }
 }
+@keyframes separacionTitulo {
+    0%{
+        letter-spacing: inherit;
+    }
+    100%{
+        letter-spacing: 1.5rem;
+    }
+}
 .animation-intro img{
-    width: 100%;
+    width: 60%;
 }
